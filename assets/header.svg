@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="340" viewBox="0 0 860 340" role="img" aria-label="Terminal: npx andrei">
+  <style>
+    .t{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;font-size:15px;fill:#c9d1d9;white-space:pre}
+    .g{fill:#00ff41}
+    .d{fill:#6e7681}
+    .w{fill:#e6edf3;font-weight:700}
+    .k{fill:#8b949e}
+    .l{opacity:0;animation:in .2s ease-out forwards}
+    @keyframes in{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+    .cur{animation:blink 1s step-end infinite}
+    @keyframes blink{50%{opacity:0}}
+  </style>
+
+  <defs>
+    <clipPath id="type">
+      <rect x="50" y="62" height="26" width="0">
+        <animate attributeName="width" begin="0.5s" dur="1.1s" fill="freeze" calcMode="discrete"
+                 values="0;9;18;27;36;45;54;63;72;81;100"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <!-- janela -->
+  <rect x="10" y="10" width="840" height="320" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <path d="M10 22a12 12 0 0 1 12-12h816a12 12 0 0 1 12 12v24H10z" fill="#161b22"/>
+  <line x1="10" y1="46" x2="850" y2="46" stroke="#30363d"/>
+  <circle cx="34" cy="28" r="6" fill="#ff5f56"/>
+  <circle cx="54" cy="28" r="6" fill="#ffbd2e"/>
+  <circle cx="74" cy="28" r="6" fill="#27c93f"/>
+  <text x="430" y="33" text-anchor="middle" class="t d" style="font-size:13px">andrei@meneghel.dev — zsh</text>
+
+  <!-- comando digitado -->
+  <text x="32" y="80" class="t g">$</text>
+  <text x="50" y="80" class="t w" clip-path="url(#type)">npx andrei</text>
+
+  <!-- saída -->
+  <text x="32" y="112" class="t d l" style="animation-delay:2s">› resolvendo andrei@21.0.0 em criciúma, sc...</text>
+
+  <g class="l" style="animation-delay:2.6s">
+    <text x="32" y="144" class="t"><tspan class="g">✔</tspan> <tspan class="k">nome    </tspan> andrei meneghel</text>
+  </g>
+  <g class="l" style="animation-delay:2.9s">
+    <text x="32" y="170" class="t"><tspan class="g">✔</tspan> <tspan class="k">papel   </tspan> desenvolvedor full-stack</text>
+  </g>
+  <g class="l" style="animation-delay:3.2s">
+    <text x="32" y="196" class="t"><tspan class="g">✔</tspan> <tspan class="k">stack   </tspan> next · nest · tailwind · laravel</text>
+  </g>
+  <g class="l" style="animation-delay:3.5s">
+    <text x="32" y="222" class="t"><tspan class="g">✔</tspan> <tspan class="k">agora   </tspan> lmsistemas · nextygroup · lovvier</text>
+  </g>
+  <g class="l" style="animation-delay:3.8s">
+    <text x="32" y="248" class="t"><tspan class="g">✔</tspan> <tspan class="k">estudo  </tspan> ciência da computação @ unesc</text>
+  </g>
+
+  <text x="32" y="280" class="t d l" style="animation-delay:4.3s">pronto em 4.3s · 0 bugs conhecidos (que eu saiba)</text>
+
+  <!-- prompt final -->
+  <g class="l" style="animation-delay:4.8s">
+    <text x="32" y="308" class="t g">$</text>
+    <rect x="50" y="295" width="9" height="17" fill="#00ff41" class="cur"/>
+  </g>
+</svg>
